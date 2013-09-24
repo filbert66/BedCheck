@@ -1,0 +1,132 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.phil_work</groupId>
+	<artifactId>BedCheck</artifactId>
+	<version>0.2</version>
+	<packaging>jar</packaging>
+
+	<name>BedCheck</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <!-- Bukkit API Version, change if necessary -->
+            <version>1.6.2-R1.0</version>
+        </dependency>
+    <dependency>
+        <groupId>org.mcstats.bukkit</groupId>
+        <artifactId>metrics</artifactId>
+<!-- Try with R7 see if that fixes his problem  -->
+        <version>R7</version>
+        <scope>compile</scope>
+    </dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<debug>false</debug>
+					<optimize>true</optimize>
+					<excludes>
+                        <exclude>**/indev/*.java</exclude>
+                    </excludes>
+
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.2</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <artifactSet>
+                <includes>
+                  <include>org.mcstats.bukkit:metrics</include>
+                </includes>
+              </artifactSet>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+		</plugins>
+		<resources>
+			<resource>
+				<!-- <targetPath>.</targetPath> -->
+				<filtering>false</filtering>
+				<directory>${project.basedir}/src/main/resources/</directory>
+			</resource>
+		</resources>
+	</build>
+	<repositories>
+        <repository>
+          <id>bukkit-repo</id>
+          <url>http://repo.bukkit.org/content/groups/public/</url>
+        </repository>
+
+    <repository>
+        <id>Plugin Metrics</id>
+        <url>http://repo.mcstats.org/content/repositories/public</url>
+    </repository>
+		<repository>
+				<id>elemento-public</id>
+				<url>http://ess.ementalo.com/nexus/content/repositories/public</url>
+		</repository>
+		<repository>
+			<id>mhonline-releases</id>
+			<url>http://repo.mhonline.fr/content/repositories/releases</url>
+		</repository>
+		<repository>
+			<id>mhonline-snapshots</id>
+			<url>http://repo.mhonline.fr/content/repositories/snapshots</url>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>mhonline</id>
+			<url>http://repo.mhonline.fr/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>mhonline</id>
+			<url>http://repo.mhonline.fr/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>

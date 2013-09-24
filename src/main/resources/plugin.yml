@@ -1,0 +1,33 @@
+# 07 Sep 2013 : PSW : New
+
+name: BedCheck
+main: com.yahoo.phil_work.bedcheck.BedCheck
+version: 0.2
+authors: [filber66]
+description: BedCheck that tells you who has their spawn bed where you click
+
+commands:
+  bc:
+    alias: bedcheck
+    description: Admin BedCheck command prefix
+    usage: <command> list|(tp <username>)
+    permission: bedcheck.admin
+
+permissions:
+  bedcheck.admin:
+    description: Allows listing and teleporting to other user's beds
+    default: op
+  bedcheck.own:
+    description: Allows user to check their own bed
+    default: true
+  bedcheck.all:
+    description: Allows user to check any bed
+    default: op
+  bedcheck.teleport:
+    description: Allows teleport to home bed when clicking on a bed with defined tool
+    default: op
+  bedcheck.*:
+    children:
+      bedcheck.all: true
+      bedcheck.own: true
+      bedcheck.teleport: true
