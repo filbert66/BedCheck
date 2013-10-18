@@ -1,8 +1,10 @@
 # 07 Sep 2013 : PSW : New
+# 25 Sep 2013 : PSW : Added admin 
+# 26 Sep 2013 : PSW : Added tool, save, reload, print, bedbreak
 
 name: BedCheck
 main: com.yahoo.phil_work.bedcheck.BedCheck
-version: 0.2
+version: 0.6
 authors: [filber66]
 description: BedCheck that tells you who has their spawn bed where you click
 
@@ -10,7 +12,7 @@ commands:
   bc:
     alias: bedcheck
     description: Admin BedCheck command prefix
-    usage: <command> list|(tp <username>)
+    usage: <command> list|(tp <username>)|(tool [[bed]check|teleport <material>])|(rule [mustbe]own|[noone]else true|false)|save|reload|print
     permission: bedcheck.admin
 
 permissions:
@@ -26,8 +28,19 @@ permissions:
   bedcheck.teleport:
     description: Allows teleport to home bed when clicking on a bed with defined tool
     default: op
+  bedbreak.beds: 
+    description: Overrides breakrule.mustbeown=true
+    default: op
+  bedbreak.others:
+    description: Allows user to break someone else's bed. Only effective when breakrule.nooneelse true
+    default: op
   bedcheck.*:
     children:
       bedcheck.all: true
       bedcheck.own: true
       bedcheck.teleport: true
+      bedcheck.admin: true
+  bedbreak.*:
+    children:
+      break.beds: true
+      break.others: true

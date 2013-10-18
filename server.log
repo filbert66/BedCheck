@@ -1,0 +1,50 @@
+2013-09-25 15:15:28 [WARNING] [BedCheck] Too many nearby beds at -508,71,719; may be inaccurate
+2013-09-25 15:15:28 [FINE] [BedCheck] Darn, found AIR at spawn at Location{world=CraftWorld{name=world},x=-236.0,y=98.0,z=-327.0,pitch=0.0,yaw=0.0}
+2013-09-25 15:15:28 [FINE] [BedCheck] Not head of bed
+2013-09-25 15:15:28 [FINE] [BedCheck] Darn, found STONE at spawn at Location{world=CraftWorld{name=world},x=-508.0,y=71.0,z=720.0,pitch=0.0,yaw=0.0}
+2013-09-25 15:15:28 [WARNING] [BedCheck] Too many nearby beds at -509,71,719; may be inaccurate
+2013-09-25 15:17:30 [INFO] Filbert66 issued server command: /bc list
+2013-09-25 15:17:41 [INFO] Filbert66 issued server command: /bc tp aznprydeg
+2013-09-25 15:17:49 [INFO] Filbert66 issued server command: /bc tp Filbert66
+2013-09-25 15:18:43 [INFO] Filbert66 issued server command: /tp -231 66 229
+2013-09-25 15:18:43 [INFO] Filbert66: Teleported Filbert66 to -230.50, 66.50, 229.50[m
+2013-09-25 15:24:53 [INFO] [AntiCreeper3] Disabling AntiCreeper3 v4.12.2
+2013-09-25 15:24:53 [INFO] [TreeAssist] Disabling TreeAssist v5.4.2
+2013-09-25 15:24:53 [INFO] [AntiFire] Disabling AntiFire v1.8
+2013-09-25 15:24:53 [INFO] AntiFire disabled.
+2013-09-25 15:24:53 [INFO] [BedCheck] Disabling BedCheck v0.3
+2013-09-25 15:24:53 [INFO] [BedCheck] Loading BedCheck v0.3
+2013-09-25 15:24:53 [INFO] [AntiFire] Loading AntiFire v1.8
+2013-09-25 15:24:53 [INFO] [TreeAssist] Loading TreeAssist v5.4.2
+2013-09-25 15:24:53 [INFO] [AntiCreeper3] Loading AntiCreeper3 v4.12.2
+2013-09-25 15:24:53 [INFO] [BedCheck] Enabling BedCheck v0.3
+2013-09-25 15:24:53 [INFO] [BedCheck] Developed by Filbert66; inspired by TehBeginner
+2013-09-25 15:24:53 [INFO] [BedCheck] successfully set log level to FINER
+2013-09-25 15:24:53 [INFO] [AntiFire] Enabling AntiFire v1.8
+2013-09-25 15:24:53 [FINE] [AntiFire] new style logstart found
+2013-09-25 15:24:53 [INFO] [AntiFire] enabled, brought to you by Filbert66
+2013-09-25 15:24:53 [INFO] [TreeAssist] Enabling TreeAssist v5.4.2
+2013-09-25 15:24:53 [INFO] [AntiCreeper3] Enabling AntiCreeper3 v4.12.2
+2013-09-25 15:24:53 [INFO] [AntiCreeper3] brought to you by Filbert66 (<=v.2.5 by Rothens)
+2013-09-25 15:24:53 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-09-25 15:24:53 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-09-25 15:25:04 [INFO] Filbert66 issued server command: /bc list
+2013-09-25 15:25:31 [FINE] [BedCheck] Right Clicked BED_BLOCK at Location{world=CraftWorld{name=world},x=-229.0,y=57.0,z=256.0,pitch=0.0,yaw=0.0}
+2013-09-25 15:25:31 [FINE] [BedCheck] Not head of bed
+2013-09-25 15:25:31 [FINE] [BedCheck] Darn, found AIR at spawn at Location{world=CraftWorld{name=world},x=-206.0,y=81.0,z=-129.0,pitch=0.0,yaw=0.0}
+2013-09-25 15:25:31 [FINER] [BedCheck] spawnDistance: Bed block found at -208,81,-132
+2013-09-25 15:25:31 [FINER] [BedCheck] spawnDistance: Bed block found at -208,81,-131
+2013-09-25 15:25:31 [FINE] [BedCheck] Not head of bed
+2013-09-25 15:25:31 [FINE] [BedCheck] Darn, found TORCH at spawn at Location{world=CraftWorld{name=world},x=-230.0,y=64.0,z=230.0,pitch=0.0,yaw=0.0}
+2013-09-25 15:25:31 [WARNING] [BedCheck] Too many nearby beds at -231,64,229; may be inaccurate
+2013-09-25 15:25:31 [FINE] [BedCheck] Darn, found STONE at spawn at Location{world=CraftWorld{name=world},x=-507.0,y=71.0,z=720.0,pitch=0.0,yaw=0.0}
+2013-09-25 15:25:31 [WARNING] [BedCheck] Too many nearby beds at -508,71,719; may be inaccurate
+2013-09-25 15:25:31 [FINE] [BedCheck] Darn, found STONE at spawn at Location{world=CraftWorld{name=world},x=-507.0,y=71.0,z=720.0,pitch=0.0,yaw=0.0}
+2013-09-25 15:25:31 [WARNING] [BedCheck] Too many nearby beds at -508,71,719; may be inaccurate
+2013-09-25 15:25:31 [FINE] [BedCheck] Darn, found AIR at spawn at Location{world=CraftWorld{name=world},x=-236.0,y=98.0,z=-327.0,pitch=0.0,yaw=0.0}
+2013-09-25 15:25:31 [FINER] [BedCheck] spawnDistance: Bed block found at -238,98,-328
+2013-09-25 15:25:31 [FINER] [BedCheck] spawnDistance: Bed block found at -238,98,-327
+2013-09-25 15:25:31 [FINE] [BedCheck] Not head of bed
+2013-09-25 15:25:31 [FINE] [BedCheck] Darn, found STONE at spawn at Location{world=CraftWorld{name=world},x=-508.0,y=71.0,z=720.0,pitch=0.0,yaw=0.0}
+2013-09-25 15:25:31 [WARNING] [BedCheck] Too many nearby beds at -509,71,719; may be inaccurate
+2013-09-25 15:27:14 [SEVERE] Reached end of stream for /68.5.219.140

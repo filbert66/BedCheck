@@ -4,7 +4,7 @@
 
 	<groupId>com.phil_work</groupId>
 	<artifactId>BedCheck</artifactId>
-	<version>0.2</version>
+	<version>0.6</version>
 	<packaging>jar</packaging>
 
 	<name>BedCheck</name>

@@ -1,4 +1,14 @@
 tool:
   bedcheck: WOOL
   teleport: STICK
+
+breakrule:
+# Following rules are checked in given order
+# If below set, cannot break beds that are not your own (Perm bedbreak.beds overrides)  
+  mustbeown: false  
+# If below set, cannot break beds if they are someone else's home (Perm bedbreak.others overrides)
+  nooneelse: true
   
+# Set below if you have a large server and bedcheck.all is taking too long. 
+#   Age is in days since last login
+#  maxLoginAge: 30
